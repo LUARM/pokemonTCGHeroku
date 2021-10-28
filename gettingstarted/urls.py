@@ -1,5 +1,5 @@
-from django.urls import path, include
-
+from django.urls import path, include, re_path
+from django.views.generic import TemplateView
 from django.contrib import admin
 
 admin.autodiscover()
@@ -18,4 +18,5 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
+    re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
