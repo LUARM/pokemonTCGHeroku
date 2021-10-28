@@ -126,6 +126,7 @@ django_heroku.settings(locals())
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 ALLOWED_HOSTS = ['floating-citadel-98170.herokuapp.com', '127.0.0.1:8000']
