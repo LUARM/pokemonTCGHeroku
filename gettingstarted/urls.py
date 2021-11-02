@@ -18,5 +18,6 @@ urlpatterns = [
     path("", hello.views.index, name="index"),
     path("db/", hello.views.db, name="db"),
     path("admin/", admin.site.urls),
+    #static/.* 
     re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
