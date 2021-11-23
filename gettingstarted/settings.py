@@ -130,4 +130,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-ALLOWED_HOSTS = ['floating-citadel-98170.herokuapp.com', '127.0.0.1:8000']
+#ALLOWED_HOSTS = ['floating-citadel-98170.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['0.0.0.0']
